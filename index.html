@@ -8,7 +8,69 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
-<body>
-  
-</body>
+  <body>
+    <header>
+      <h1>Order Stuff!</h1> 
+    </header>
+    <main>
+      <h3>Please select your items and quantity below.</h3>
+      <div class="item-row">
+        <form id="add-item">
+          <label>Product</label>  
+          <select name="product" id="products"></select>
+          <label>Qty.</label>
+          <input type="number" name="qty" min="0"></p>
+          <button type="submit">Add To Cart</button>
+        </form>
+        <fieldset>
+          <form id="address-form">
+              <legend>Please Enter Your Address Below</legend>
+              
+              <label for="name">Name: </label>
+              <input name="name" type="text" size="15" />
+              
+              <label for="street">Street: </label>
+              <input name="street" type="text" size="15" />
+      
+              <label for="city">City: </label>
+              <input name="city" type="text" size="15" />
+      
+              <label for="state">State: </label>
+              <input name="state" type="text" size="2" />
+              
+              <label for="zip">Zip Code: </label>
+              <input name="zip" type="text" size="5" />
+
+              <button type="submit">Go to Checkout Cart</button>
+            </fieldset>
+          </form>
+        </fieldset>
+        
+    
+
+
+
+
+
+        <!-- <div class="dropdown">
+          <div class="dropdown">
+            <button class="dropbtn">Right</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    
+    <footer>
+      <section>
+        <a href="cart.html">See shopping cart</a>
+      </section>
+      
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
 </html>
