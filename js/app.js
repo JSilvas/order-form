@@ -45,7 +45,7 @@ function listProducts() {
 }
 
 function addItem(event) {
-  console.log('log of the event target: ', event.target); 
+  console.log('log of the event target: ', event.target);
   event.preventDefault();
 
   // take input from dropdown and qty
@@ -79,7 +79,7 @@ function sendToCheckout(event) {
   var subCity = event.target.city.value;
   var subState = event.target.state.value;
   var subZip = event.target.zip.value;
-  
+
   Product.address.push(subName, subStreet, subCity, subState, subZip);
   console.table(Product.address);
 }
@@ -93,8 +93,6 @@ if (localStorage.allProductsToLS) {
   getInstances(); //  create instances from scratch
 }
 listProducts();
-
-// console.table(Product.allProducts);
 
 addItemBtn.addEventListener('submit', addItem);
 addressForm.addEventListener('submit', sendToCheckout);
